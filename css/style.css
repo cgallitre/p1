@@ -1,0 +1,73 @@
+/* Style WebAgency 
+Cyril Gallitre - février 2019
+*/
+@font-face {
+    font-family: 'fontawesomeregular';
+    src: url('../fonts/fontawesome-webfont.ttf') format('truetype'),
+         url('../fonts/fontawesome-webfont.woff') format('woff'),
+         url('../fonts/fontawesome-webfont.svg') format ('svg'),
+         url('../fonts/fontawesome-webfont.eot') format ('eot');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.container{
+   margin:auto;
+}
+
+body{
+    margin-top:20px;
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+   
+}
+
+header{
+    display: flex;
+    justify-content: space-around;
+}
+/* Menu de navigation */
+nav{
+    padding-top:10px;
+}
+
+nav ul{
+    list-style-type: none;
+    display:flex;
+    justify-content: space-between;
+}
+
+nav li{
+    margin-right:15px;
+    color : #555555;
+    font-size: 0.9em;
+}
+
+a{
+    text-decoration: none;
+    color:#555555;
+}
+
+a:hover{
+    border-top: 2px solid #5cadd3; 
+}
+
+/* slider */
+
+.slider{
+    background: url(../images/slider/bg1.jpg) no-repeat center;
+    height:550px;
+    color:#ffffff;
+}
+
+.name{
+    color:#5cadd3;
+}
+
+.slider h1{
+    text-transform: uppercase;
+}
+
+/* Contenu texte de la page */
+section h1{
+    text-transform: uppercase;  
+}
