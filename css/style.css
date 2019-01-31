@@ -11,20 +11,60 @@ Cyril Gallitre - février 2019
     font-style: normal;
 }
 
-.container{
-   margin:auto;
+/* Contenus principaux */
+
+#container{
+    width:1200px;
+    margin:auto;
 }
 
 body{
     margin-top:20px;
-    font-family: 'Trebuchet MS', Arial, sans-serif;
-   
+    font-family: 'fontawesomeregular','Trebuchet MS', Arial, sans-serif;
+    color:#555555;
 }
 
+section h1{
+    text-transform: uppercase;  
+    color:#000;
+    font-size:2em;
+    text-align: center;
+}
+
+section h2{
+    font-size:1.2em;
+}
+
+section .description{
+    width:50%;
+    margin:auto;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+section{
+    margin-top:20px;
+    padding-top:10px;
+}
+
+/* En-tête */
 header{
+    position:fixed;
+    top:0;
+    left:0;
+    right:0;
+    background-color: #ffffff;
+    height:70px;
+    padding-top:10px;
+    z-index:5;
+}
+
+#wrap_header{
     display: flex;
     justify-content: space-around;
 }
+
+
 /* Menu de navigation */
 nav{
     padding-top:10px;
@@ -33,41 +73,127 @@ nav{
 nav ul{
     list-style-type: none;
     display:flex;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 nav li{
     margin-right:15px;
     color : #555555;
     font-size: 0.9em;
+    
 }
 
-a{
+nav a{
     text-decoration: none;
     color:#555555;
 }
 
-a:hover{
+nav a:hover{
     border-top: 2px solid #5cadd3; 
 }
 
+
 /* slider */
 
-.slider{
+#slider{
+    padding-top:30px;
+    position:relative;
     background: url(../images/slider/bg1.jpg) no-repeat center;
-    height:550px;
+    height:650px;
     color:#ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .name{
     color:#5cadd3;
 }
 
-.slider h1{
-    text-transform: uppercase;
+#slogan{
+    position: absolute;
+    top:30%;
+    left:15%;
 }
 
-/* Contenu texte de la page */
-section h1{
-    text-transform: uppercase;  
+#slider h1{
+    text-transform: uppercase;
+    width:70%;
+}
+
+#fleche_gauche{
+    position: absolute;
+    top:48%;
+    left:10px;
+    font-size:3em;
+}
+
+#fleche_droite{
+    position: absolute;
+    top:48%;
+    right:10px;
+    font-size:3em;
+}
+
+.button{
+    background-color: #5cadd3;
+    width:120px;
+    text-align: center;
+    padding: 8px 0 8px 0;
+    border-radius: 3px;
+
+}
+
+/* Services */
+#services{
+    display: flex;
+    justify-content: space-between;
+}
+
+#UI, #SEO, #UX{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    width:90%;
+    text-align: justify;
+}
+
+.icones{
+    font-size:4em;
+    margin-right:20px;
+}
+
+#description_services{
+    width:50%;
+}
+
+/* Projets */
+
+#projets{
+    background-color: #f0f0f0;
+}
+
+#project_buttons{
+    display: flex;
+    justify-content: center;
+}
+
+.filter_button{
+    width:100px;
+    background-color: #b5b5b5;
+    text-align: center;
+    padding: 8px 0 8px 0;
+    margin-left:-3px;
+    border-radius: 3px;
+}
+
+.filter_button:hover{
+    background-color: #5cadd3;
+    color:#FFF;
+    
+}
+
+#list_project{
+    display:flex;
 }
