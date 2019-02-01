@@ -2,16 +2,22 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
+    <meta name="author" content="Cyril Gallitre">
+    <meta name="description" content="WebAgency, l'agence de tous vos projets web">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ"
+        crossorigin="anonymous">
+    <script defer src="https://use.fontawesome.com/releases/v5.7.0/js/all.js" integrity="sha384-qD/MNBVMm3hVYCbRTSOW130+CWeRIKbpot9/gR1BHkd7sIct4QKhT1hOPd+2hO8K"
+        crossorigin="anonymous"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>WebAgency</title>
 </head>
+
 <body>
     <!-- container englobe toute le contenu de la page -->
     <div id="container">
-        
+
         <!-- bandeau supérieur fixe avec logo + menu -->
         <header>
             <div id="wrap_header">
@@ -28,11 +34,20 @@
                 </nav>
             </div>
         </header>
-        
+
         <!-- slider -->
         <div id="slider">
-            <span id="fleche_gauche"><i class="fas fa-chevron-circle-left"></i></span>
-            <span id="fleche_droite"><i class="fas fa-chevron-circle-right"></i></span>
+            <!-- Flèche de déplacement gauche -->
+            <span id="fleche_gauche" class="fa-layers">               
+                <i class="fas fa-circle icones_dark" data-fa-transform="grow-6 left-8"></i>
+                <i class="fas fa-chevron-left" data-fa-transform="shrink-8 left-3"></i>
+            </span>
+            <!-- Flèche de déplacement droite -->
+            <span id="fleche_droite" class="fa-layers">
+                <i class="fas fa-circle icones_dark" data-fa-transform="grow-6 right-8"></i>
+                <i class="fas fa-chevron-right" data-fa-transform="shrink-8 right-3"></i>
+            </span>
+            <!-- Slogan -->
             <div id="slogan">
                 <h1><span class="name">WEBAGENCY</span> : L'AGENCE DE TOUS VOS PROJETS !</h1>
                 <p>Vous avez un projet ? La WebAgency vous aide à le réaliser</p>
@@ -42,35 +57,70 @@
 
         <!-- Services -->
         <section>
+            <!-- Présentation des services -->
             <h1>Nos services</h1>
-            <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt est corrupti labore veritatis ipsum dolor assumenda, perferendis corporis.</p>
-            
+            <p class="title_line"><i class="fas fa-circle"></i></p>
+            <hr>
+            <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt est corrupti
+                labore veritatis ipsum dolor assumenda, perferendis corporis.</p>
+
+            <!-- Détails des services -->
             <div id="services">
+                <!-- Image principale à gauche -->
                 <figure>
                     <img id="img_services" src="images/main-feature.png" alt="Services de WebAgency" width="510" height="319">
                 </figure>
+                <!-- Liste des services -->
                 <div id="description_services">
+                    <!-- Service UX -->
                     <div id="UX">
-                            <span class="icones"><i class="fas fa-chart-line"></i></span> 
-                            <div id="text_UX">
-                                <h2>UX design</h2>
-                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque ut aliquam similique dolores fugiat beatae quae dicta enim ullam officiis saepe iste quisquam unde animi repellat expedita maxime, a aperiam!</p>
-                            </div>
+                        <!-- Logo UX-->
+                        <div class="fa-2x">
+                            <span class="fa-layers">
+                                <i class="far fa-circle icones_gris" data-fa-transform="grow-16 left-10"></i>
+                                <i class="fas fa-chart-line icones_bleu" data-fa-transform="left-10"></i>
+                                <i class="fas fa-circle icones_blanc" data-fa-transform="shrink-6 right-4"></i>
+                                <i class="fas fa-circle icones_bleu" data-fa-transform="shrink-10 right-4"></i>
+                            </span>
                         </div>
-
-                    <div id="UI">
-                            <span class="icones"><i class="fas fa-cubes"></i></span> 
-                            <div id="text_UI">
-                                <h2>UI design</h2>
-                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque ut aliquam similique dolores fugiat beatae quae dicta enim ullam officiis saepe iste quisquam unde animi repellat expedita maxime, a aperiam!</p>
-                            </div>
+                        <!-- UX contenu textuel-->
+                        <div class="text_services">
+                            <h2>UX design</h2>
+                            <p>Parce que l'eXpérience Utilisateur est la clé de succès de votre site, nous portons toute notre attention sur ce point, premier élément de votre projet.</p>
+                        </div>
                     </div>
-                    
+                    <!-- Service UI-->
+                    <div id="UI">
+                        <!-- Logo UI -->
+                        <div class="fa-2x">
+                            <span class="fa-layers">
+                                <i class="far fa-circle icones_gris" data-fa-transform="grow-16 left-10"></i>
+                                <i class="fas fa-cubes icones_bleu" data-fa-transform="left-10"></i>
+                                <i class="fas fa-circle icones_blanc" data-fa-transform="shrink-6 right-4"></i>
+                                <i class="fas fa-circle icones_bleu" data-fa-transform="shrink-10 right-4"></i>
+                            </span>
+                        </div>
+                        <!-- UI Contenu textuel-->
+                        <div class="text_services">
+                            <h2>UI design</h2>
+                            <p>Point de rencontre entre l'internaute et votre site, l'Interface Utilisateur doit être soignée et répondre aux exigences de l'eXpérience Utilisateur déterminée en amont du projet. Une bonne interface est le point de départ de cette eXpérience Utilisateur.</p>
+                        </div>
+                    </div>
+                    <!-- Service SEO -->
                     <div id="SEO">
-                        <span class="icones"><i class="fas fa-chart-pie"></i></span>
-                        <div id="text_SEO">
+                        <!-- Logo SEO -->
+                        <div class="fa-2x">
+                            <span class="fa-layers">
+                                <i class="far fa-circle icones_gris" data-fa-transform="grow-16 left-10"></i>
+                                <i class="fas fa-chart-pie icones_bleu" data-fa-transform="left-10"></i>
+                                <i class="fas fa-circle icones_blanc" data-fa-transform="shrink-7 right-4"></i>
+                                <i class="fas fa-circle icones_bleu" data-fa-transform="shrink-10 right-4"></i>
+                            </span>
+                        </div>
+                        <!-- SEO Contenu textuel -->
+                        <div class="text_services">
                             <h2>SEO</h2>
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque ut aliquam similique dolores fugiat beatae quae dicta enim ullam officiis saepe iste quisquam unde animi repellat expedita maxime, a aperiam!</p>
+                            <p>Positionner votre site dans les premiers résultats des moteurs de recherche en fonction des mots clés que vous avez déterminés : un travail de réflexion à mener sur le long terme.</p>
                         </div>
                     </div>
                 </div>
@@ -79,33 +129,102 @@
 
         <!-- Projets -->
         <section id="projets">
+            <!-- Présentation des projets-->
             <h1>Nos projets</h1>
-            <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem magnam necessitatibus facere repellendus distinctio at.</p>
+            <p class="title_line"><i class="fas fa-circle"></i></p>
+            <hr>
+            <p class="description">Découvrez nos dernières réalisations : elles sont le meilleur témoignage de nos réussites.</p>
+            <!-- Barre de sélection des projets -->
             <div id="project_buttons">
-                <p class="filter_button">All Works</p>
+                <p class="filter_button">All Works</p>   
                 <p class="filter_button">Creative</p>
                 <p class="filter_button">Corporate</p>
-                <p class="filter_button">Portfolio</p>
+                <p class="filter_button">Portfolio</p>    
             </div>
-            <div class="list_project">
+            <!-- Liste des projets sous forme de vignettes -->
+            <div id="list_project">
                 <figure>
-                    <img src="images/portfolio/01.jpg" alt="">
-                    <figcaption>Portfolio Item 1</figcaption>
+                    <img src="images/portfolio/01_min.jpg" alt="">
+                    <figcaption>
+                        <h2>Portfolio Item 1</h2>
+                        <p>Lorem Ipsum Dolor Sit</p>
+                    </figcaption>
                 </figure>
-                <p><img src="images/portfolio/02.jpg" alt=""></p>
-                <p><img src="images/portfolio/03.jpg" alt=""></p>
-                <p><img src="images/portfolio/04.jpg" alt=""></p>
-                <p><img src="images/portfolio/05.jpg" alt=""></p>
-                <p><img src="images/portfolio/06.jpg" alt=""></p>
-                <p><img src="images/portfolio/07.jpg" alt=""></p>
-                <p><img src="images/portfolio/08.jpg" alt=""></p>
+                <figure>
+                    <img src="images/portfolio/02_min.jpg" alt="">
+                    <figcaption>
+                        <h2>Portfolio Item 2</h2>
+                        <p>Lorem Ipsum Dolor Sit</p>
+                    </figcaption>
+                </figure>
+                <figure>
+                    <img src="images/portfolio/03_min.jpg" alt="">
+                    <figcaption>
+                        <h2>Portfolio Item 3</h2>
+                        <p>Lorem Ipsum Dolor Sit</p>
+                    </figcaption>
+                </figure>
+                <figure>
+                    <img src="images/portfolio/04_min.jpg" alt="">
+                    <figcaption>
+                        <h2>Portfolio Item 4</h2>
+                        <p>Lorem Ipsum Dolor Sit</p>
+                    </figcaption>
+                </figure>
+                <figure>
+                    <img src="images/portfolio/05_min.jpg" alt="">
+                    <figcaption>
+                        <h2>Portfolio Item 5</h2>
+                        <p>Lorem Ipsum Dolor Sit</p>
+                    </figcaption>
+                </figure>
+                <figure>
+                    <img src="images/portfolio/06_min.jpg" alt="">
+                    <figcaption>
+                        <h2>Portfolio Item 6</h2>
+                        <p>Lorem Ipsum Dolor Sit</p>
+                    </figcaption>
+                </figure>
+                <figure>
+                    <img src="images/portfolio/07_min.jpg" alt="">
+                    <figcaption>
+                        <h2>Portfolio Item 7</h2>
+                        <p>Lorem Ipsum Dolor Sit</p>
+                    </figcaption>
+                </figure>
+                <figure>
+                    <img src="images/portfolio/08_min.jpg" alt="">
+                    <figcaption>
+                        <h2>Portfolio Item 8</h2>
+                        <p>Lorem Ipsum Dolor Sit</p>
+                    </figcaption>
+                </figure>
             </div>
         </section>
 
         <!-- Pied de page -->
-        <footer></footer>
-
-
+        <footer>
+            <!-- Carte -->
+            <div id="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.221609680723!2d2.347636915674888!3d48.87305177928887!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e145ccb3091%3A0x9495beee8c96ec27!2s25+Rue+d&#39;Hauteville%2C+75010+Paris!5e0!3m2!1sfr!2sfr!4v1549012912986"
+                    width="1200" height="500" frameborder="0" style="border:0" allowfullscreen></iframe>
+            </div>
+            <!-- Formulaire de contact-->
+            <form method="post" action="#">
+                <h1>Contact Info</h1>
+                <address>
+                    <p id="enterprise_name">WebAgency SAS</p>
+                    <p>25 Rue d'Hauteville 75010 Paris</p>
+                    <p>Tél.: 01 02 03 04 05</p>
+                </address>
+                <p><input class="champs" type="text" name="nom" size="30" placeholder="Nom" /></p>
+                <p><input class="champs" type="email" name="email" size="30" placeholder="Email" /></p>
+                <p><input class="champs" type="text" name="sujet" size="30" placeholder="Sujet" /></p>
+                <p><textarea name="message" rows="10" placeholder="Message"></textarea></p>
+                <input class="button" type="submit" value="Envoyer le message" />
+            </form>
+        </footer>
     </div>
 </body>
+
 </html>

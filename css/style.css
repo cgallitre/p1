@@ -29,6 +29,7 @@ section h1{
     color:#000;
     font-size:2em;
     text-align: center;
+    margin-bottom: 0;
 }
 
 section h2{
@@ -45,6 +46,18 @@ section .description{
 section{
     margin-top:20px;
     padding-top:10px;
+}
+
+.title_line{
+    font-size: 0.8em;
+    color:#379ece;
+    text-align:center;
+}
+hr{
+    padding: 0 0 0 0;
+    width:10%;
+    margin:-20px auto 30px auto;
+    background-color: #f0f0f0;
 }
 
 /* En-tête */
@@ -90,6 +103,7 @@ nav a{
 
 nav a:hover{
     border-top: 2px solid #5cadd3; 
+    padding-top:25px;
 }
 
 
@@ -124,25 +138,43 @@ nav a:hover{
 
 #fleche_gauche{
     position: absolute;
-    top:48%;
-    left:10px;
-    font-size:3em;
+    top:45%;
+    left:0;
+    font-size:3.5em;
+    display: inline-block;
+    height: 80px;
+    overflow:hidden;
 }
 
 #fleche_droite{
     position: absolute;
-    top:48%;
-    right:10px;
-    font-size:3em;
+    top:45%;
+    right:0;
+    font-size:3.5em;
+    display: inline-block;
+    height: 80px;
+    overflow:hidden;
 }
 
 .button{
     background-color: #5cadd3;
     width:120px;
     text-align: center;
-    padding: 8px 0 8px 0;
+    padding: 12px 0 8px 0;
     border-radius: 3px;
+    color:#FFF;
+    border-bottom: 4px solid #379ece;
+}
 
+.button:hover{
+    background-color: #cdcdcd;
+    color:#555555;
+    border-bottom: 4px solid #cdcdcd;
+}
+
+.icones_dark{
+    color:rgba(85, 85, 85, .8);
+    
 }
 
 /* Services */
@@ -159,13 +191,24 @@ nav a:hover{
     text-align: justify;
 }
 
-.icones{
-    font-size:4em;
-    margin-right:20px;
+.icones_bleu{
+    color :#5cadd3;
+}
+
+.icones_gris{
+    color: #f0f0f0;
+}
+
+.icones_blanc{
+    color:#fff;
 }
 
 #description_services{
     width:50%;
+}
+
+.text_services{
+    margin-left:20px;
 }
 
 /* Projets */
@@ -177,23 +220,102 @@ nav a:hover{
 #project_buttons{
     display: flex;
     justify-content: center;
+    margin-bottom: 30px;
 }
 
 .filter_button{
     width:100px;
-    background-color: #b5b5b5;
+    background-color: #cdcdcd;
     text-align: center;
-    padding: 8px 0 8px 0;
-    margin-left:-3px;
-    border-radius: 3px;
+    padding: 12px 0 8px 0;
+    border-bottom: 4px solid #cdcdcd;
+}
+
+.filter_button:nth-child(1){
+    border-radius: 3px 0 0 3px;
+}
+
+.filter_button:nth-child(4){
+    border-radius: 0 3px 3px 0;
 }
 
 .filter_button:hover{
     background-color: #5cadd3;
     color:#FFF;
-    
+    border-bottom: 4px solid #379ece;
+}
+
+.fleche_bas{
+    color:#cdcdcd;
 }
 
 #list_project{
     display:flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+#list_project figure{
+    position:relative;
+    overflow:hidden;
+}
+
+#list_project figcaption{
+    display: none;
+}
+
+#list_project figure:hover figcaption{
+    background-color: rgba(96, 96, 96, 0.6);
+    color:#fff;
+    font-size: 0.8em;
+    position: absolute;
+    bottom:4px;
+    left:0;
+    display: block;
+    width: 100%;
+}
+
+#list_project figure p{
+    padding: 0 0 0 5px;
+    margin: 0px 0 5px 0;
+}
+
+#list_project figure h2{
+    padding: 0 0 0 5px;
+    margin: 5px 0 5px 0;
+}
+
+/* Pied de page */
+
+footer{
+    margin-top : 40px;
+    position:relative;
+    font-size: 0.7em;
+}
+
+footer form{
+    position: absolute;
+    padding:0 0 20px 20px;
+    top : 30px;
+    right : 50px;
+    background-color: rgba(250, 250, 250, 1);
+    width:260px;
+}
+
+footer textarea, footer .champs{
+    width: 90%;
+
+}
+
+footer address p, h2{
+    margin: 0 0 0 0;
+    padding: 5px 0 0 0;
+}
+
+#enterprise_name{
+    font-weight: bold;
+}
+
+address{
+    font-style:normal;
 }
