@@ -21,7 +21,6 @@ Cyril Gallitre - février 2019
          url('../fonts/roboto-bold-webfont.svg#robotobold') format('svg');
     font-weight: normal;
     font-style: normal;
-
 }
 
 /* Contenus principaux */
@@ -76,8 +75,8 @@ section{
 hr{
     padding: 0 0 0 0;
     width:10%;
-    margin:-20px auto 30px auto;
-    background-color: #f0f0f0;
+    margin:-25px auto 30px auto;
+    border: 1px solid #cdcdcd;
 }
 
 /* En-tête */
@@ -181,7 +180,7 @@ nav a:hover{
     width:120px;
     text-align: center;
     padding: 12px 0 8px 0;
-    border-radius: 3px;
+    border-radius: 5px;
     color:#FFF;
     border-bottom: 4px solid #379ece;
 }
@@ -245,18 +244,25 @@ nav a:hover{
 
 .filter_button{
     width:100px;
+    position:relative;
     background-color: #cdcdcd;
     text-align: center;
     padding: 12px 0 8px 0;
     border-bottom: 4px solid #cdcdcd;
 }
+.fleche{
+    position:relative;
+    left:45px;
+    top:-23px;
+    color:#f0f0f0;
 
-.filter_button:nth-child(1){
-    border-radius: 3px 0 0 3px;
+}
+.wrap_button:nth-child(1) .filter_button{
+    border-radius: 5px 0 0 5px;
 }
 
-.filter_button:nth-child(4){
-    border-radius: 0 3px 3px 0;
+.wrap_button:nth-child(4) .filter_button{
+    border-radius: 0 5px 5px 0;
 }
 
 .filter_button:hover{
@@ -265,8 +271,9 @@ nav a:hover{
     border-bottom: 4px solid #379ece;
 }
 
-.fleche_bas{
-    color:#cdcdcd;
+.wrap_button:hover .fleche{
+    color:#379ece;
+    top:-24px;
 }
 
 #list_project{
@@ -289,10 +296,21 @@ nav a:hover{
     color:#fff;
     font-size: 0.8em;
     position: absolute;
-    bottom:4px;
+    bottom:3px;
     left:0;
     display: block;
     width: 100%;
+}
+
+.rounded_button{
+    position: absolute;
+    top:68px;
+    right:10px;
+    display:none;
+}
+
+#list_project figure:hover .rounded_button{
+    display:block;
 }
 
 #list_project figure p{
@@ -303,7 +321,9 @@ nav a:hover{
 #list_project figure h2{
     padding: 0 0 0 5px;
     margin: 5px 0 5px 0;
+    color:#FFF;
 }
+
 
 /* Pied de page */
 

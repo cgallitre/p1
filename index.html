@@ -59,7 +59,12 @@
         <section>
             <!-- Présentation des services -->
             <h1>Nos services</h1>
-            <p class="title_line"><i class="fas fa-circle"></i></p>
+            <p class="title_line">
+                <span class="fa-stack">
+                    <i class="fas fa-circle  fa-stack-1x icones_blanc" data-fa-transform="grow-8"></i>
+                    <i class="fas fa-circle fa-stack-1x"></i>
+                </span>
+            </p>
             <hr>
             <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt est corrupti
                 labore veritatis ipsum dolor assumenda, perferendis corporis.</p>
@@ -78,7 +83,8 @@
                         <div class="fa-2x">
                             <span class="fa-layers">
                                 <i class="far fa-circle icones_gris" data-fa-transform="grow-16 left-10"></i>
-                                <i class="fas fa-chart-line icones_bleu" data-fa-transform="left-10"></i>
+                                <i class="far fa-circle icones_blanc" data-fa-transform="grow-13 left-10"></i>
+                                <i class="fas fa-chart-line icones_bleu" data-fa-transform="shrink-2 left-10"></i>
                                 <i class="fas fa-circle icones_blanc" data-fa-transform="shrink-6 right-4"></i>
                                 <i class="fas fa-circle icones_bleu" data-fa-transform="shrink-10 right-4"></i>
                             </span>
@@ -95,7 +101,8 @@
                         <div class="fa-2x">
                             <span class="fa-layers">
                                 <i class="far fa-circle icones_gris" data-fa-transform="grow-16 left-10"></i>
-                                <i class="fas fa-cubes icones_bleu" data-fa-transform="left-10"></i>
+                                <i class="far fa-circle icones_blanc" data-fa-transform="grow-13 left-10"></i>
+                                <i class="fas fa-cubes icones_bleu" data-fa-transform="shrink-2 left-10"></i>
                                 <i class="fas fa-circle icones_blanc" data-fa-transform="shrink-6 right-4"></i>
                                 <i class="fas fa-circle icones_bleu" data-fa-transform="shrink-10 right-4"></i>
                             </span>
@@ -103,7 +110,7 @@
                         <!-- UI Contenu textuel-->
                         <div class="text_services">
                             <h2>UI design</h2>
-                            <p>Point de rencontre entre l'internaute et votre site, l'Interface Utilisateur doit être soignée et répondre aux exigences de l'eXpérience Utilisateur déterminée en amont du projet. Une bonne interface est le point de départ de cette eXpérience Utilisateur.</p>
+                            <p>Point de rencontre entre l'internaute et votre site, l'Interface Utilisateur doit être soignée et répondre aux exigences de l'eXpérience Utilisateur déterminée en amont du projet.</p>
                         </div>
                     </div>
                     <!-- Service SEO -->
@@ -112,15 +119,16 @@
                         <div class="fa-2x">
                             <span class="fa-layers">
                                 <i class="far fa-circle icones_gris" data-fa-transform="grow-16 left-10"></i>
-                                <i class="fas fa-chart-pie icones_bleu" data-fa-transform="left-10"></i>
-                                <i class="fas fa-circle icones_blanc" data-fa-transform="shrink-7 right-4"></i>
+                                <i class="far fa-circle icones_blanc" data-fa-transform="grow-13 left-10"></i>
+                                <i class="fas fa-chart-pie icones_bleu" data-fa-transform="shrink-2 left-10"></i>
+                                <i class="fas fa-circle icones_blanc" data-fa-transform="shrink-6 right-4"></i>
                                 <i class="fas fa-circle icones_bleu" data-fa-transform="shrink-10 right-4"></i>
                             </span>
                         </div>
                         <!-- SEO Contenu textuel -->
                         <div class="text_services">
                             <h2>SEO</h2>
-                            <p>Positionner votre site dans les premiers résultats des moteurs de recherche en fonction des mots clés que vous avez déterminés : un travail de réflexion à mener sur le long terme.</p>
+                            <p>Positionner votre site dans les premiers résultats des moteurs de recherche en fonction des mots clés que vous avez déterminés : un travail d'experts que nous mettons à votre disposition.</p>
                         </div>
                     </div>
                 </div>
@@ -131,73 +139,153 @@
         <section id="projets">
             <!-- Présentation des projets-->
             <h1>Nos projets</h1>
-            <p class="title_line"><i class="fas fa-circle"></i></p>
+            <p class="title_line">
+                <span class="fa-stack">
+                    <i class="fas fa-circle  fa-stack-1x icones_blanc" data-fa-transform="grow-8"></i>
+                    <i class="fas fa-circle fa-stack-1x"></i>
+                </span>
+            </p>
             <hr>
             <p class="description">Découvrez nos dernières réalisations : elles sont le meilleur témoignage de nos réussites.</p>
             <!-- Barre de sélection des projets -->
             <div id="project_buttons">
-                <p class="filter_button">All Works</p>   
-                <p class="filter_button">Creative</p>
-                <p class="filter_button">Corporate</p>
-                <p class="filter_button">Portfolio</p>    
+                <div class="wrap_button">
+                    <p class="filter_button">All Works</p>
+                    <i class="fas fa-sort-down fleche"></i>
+                </div>
+                <div class="wrap_button">
+                    <p class="filter_button">Creative</p>
+                    <i class="fas fa-sort-down fleche"></i>
+                </div>
+                <div class="wrap_button">
+                    <p class="filter_button">Corporate</p>
+                    <i class="fas fa-sort-down fleche"></i>
+                </div>
+                <div class="wrap_button" >
+                    <p class="filter_button">Portfolio</p>
+                    <i class="fas fa-sort-down fleche"></i>
+                </div> 
             </div>
             <!-- Liste des projets sous forme de vignettes -->
             <div id="list_project">
                 <figure>
-                    <img src="images/portfolio/01_min.jpg" alt="">
+                    <img src="images/portfolio/01_min.jpg" alt="Projet 1">
                     <figcaption>
                         <h2>Portfolio Item 1</h2>
                         <p>Lorem Ipsum Dolor Sit</p>
                     </figcaption>
+                    <div class="rounded_button">
+                        <span class="fa-stack">
+                            <i class="fas fa-circle  fa-stack-1x icones_blanc" data-fa-transform="grow-16"" ></i>
+                            <i class="fas fa-circle fa-stack-1x icones_bleu" data-fa-transform="grow-12"></i>
+                            <i class="far fa-eye fa-stack-1x icones_blanc" data-fa-transform="shrink-6"></i>
+                        </span>
+                    </div>
                 </figure>
                 <figure>
-                    <img src="images/portfolio/02_min.jpg" alt="">
+                    <img src="images/portfolio/02_min.jpg" alt="Projet 2">
                     <figcaption>
                         <h2>Portfolio Item 2</h2>
                         <p>Lorem Ipsum Dolor Sit</p>
                     </figcaption>
+                    <div class="rounded_button">
+                        <span class="fa-stack">
+                            <i class="fas fa-circle  fa-stack-1x icones_blanc" data-fa-transform="grow-16"" ></i>
+                                                                <i class="
+                                fas fa-circle fa-stack-1x icones_bleu" data-fa-transform="grow-12"></i>
+                            <i class="far fa-eye fa-stack-1x icones_blanc" data-fa-transform="shrink-6"></i>
+                        </span>
+                    </div>
                 </figure>
                 <figure>
-                    <img src="images/portfolio/03_min.jpg" alt="">
+                    <img src="images/portfolio/03_min.jpg" alt="Projet 3">
                     <figcaption>
                         <h2>Portfolio Item 3</h2>
                         <p>Lorem Ipsum Dolor Sit</p>
                     </figcaption>
+                    <div class="rounded_button">
+                        <span class="fa-stack">
+                            <i class="fas fa-circle  fa-stack-1x icones_blanc" data-fa-transform="grow-16"" ></i>
+                                                <i class="
+                                fas fa-circle fa-stack-1x icones_bleu" data-fa-transform="grow-12"></i>
+                            <i class="far fa-eye fa-stack-1x icones_blanc" data-fa-transform="shrink-6"></i>
+                        </span>
+                    </div>
                 </figure>
                 <figure>
-                    <img src="images/portfolio/04_min.jpg" alt="">
+                    <img src="images/portfolio/04_min.jpg" alt="Projet 4">
                     <figcaption>
                         <h2>Portfolio Item 4</h2>
                         <p>Lorem Ipsum Dolor Sit</p>
                     </figcaption>
+                    <div class="rounded_button">
+                        <span class="fa-stack">
+                            <i class="fas fa-circle  fa-stack-1x icones_blanc" data-fa-transform="grow-16"" ></i>
+                                                <i class="
+                                fas fa-circle fa-stack-1x icones_bleu" data-fa-transform="grow-12"></i>
+                            <i class="far fa-eye fa-stack-1x icones_blanc" data-fa-transform="shrink-6"></i>
+                        </span>
+                    </div>
                 </figure>
                 <figure>
-                    <img src="images/portfolio/05_min.jpg" alt="">
+                    <img src="images/portfolio/05_min.jpg" alt="Projet 5">
                     <figcaption>
                         <h2>Portfolio Item 5</h2>
                         <p>Lorem Ipsum Dolor Sit</p>
                     </figcaption>
+                    <div class="rounded_button">
+                        <span class="fa-stack">
+                            <i class="fas fa-circle  fa-stack-1x icones_blanc" data-fa-transform="grow-16"" ></i>
+                                                <i class="
+                                fas fa-circle fa-stack-1x icones_bleu" data-fa-transform="grow-12"></i>
+                            <i class="far fa-eye fa-stack-1x icones_blanc" data-fa-transform="shrink-6"></i>
+                        </span>
+                    </div>
                 </figure>
                 <figure>
-                    <img src="images/portfolio/06_min.jpg" alt="">
+                    <img src="images/portfolio/06_min.jpg" alt="Projet 6">
                     <figcaption>
                         <h2>Portfolio Item 6</h2>
                         <p>Lorem Ipsum Dolor Sit</p>
                     </figcaption>
+                    <div class="rounded_button">
+                        <span class="fa-stack">
+                            <i class="fas fa-circle  fa-stack-1x icones_blanc" data-fa-transform="grow-16"" ></i>
+                                                <i class="
+                                fas fa-circle fa-stack-1x icones_bleu" data-fa-transform="grow-12"></i>
+                            <i class="far fa-eye fa-stack-1x icones_blanc" data-fa-transform="shrink-6"></i>
+                        </span>
+                    </div>
                 </figure>
                 <figure>
-                    <img src="images/portfolio/07_min.jpg" alt="">
+                    <img src="images/portfolio/07_min.jpg" alt="Projet 7">
                     <figcaption>
                         <h2>Portfolio Item 7</h2>
                         <p>Lorem Ipsum Dolor Sit</p>
                     </figcaption>
+                    <div class="rounded_button">
+                        <span class="fa-stack">
+                            <i class="fas fa-circle  fa-stack-1x icones_blanc" data-fa-transform="grow-16"" ></i>
+                                                <i class="
+                                fas fa-circle fa-stack-1x icones_bleu" data-fa-transform="grow-12"></i>
+                            <i class="far fa-eye fa-stack-1x icones_blanc" data-fa-transform="shrink-6"></i>
+                        </span>
+                    </div>
                 </figure>
                 <figure>
-                    <img src="images/portfolio/08_min.jpg" alt="">
+                    <img src="images/portfolio/08_min.jpg" alt="Projet 8">
                     <figcaption>
                         <h2>Portfolio Item 8</h2>
                         <p>Lorem Ipsum Dolor Sit</p>
                     </figcaption>
+                    <div class="rounded_button">
+                        <span class="fa-stack">
+                            <i class="fas fa-circle  fa-stack-1x icones_blanc" data-fa-transform="grow-16"" ></i>
+                                                <i class="
+                                fas fa-circle fa-stack-1x icones_bleu" data-fa-transform="grow-12"></i>
+                            <i class="far fa-eye fa-stack-1x icones_blanc" data-fa-transform="shrink-6"></i>
+                        </span>
+                    </div>
                 </figure>
             </div>
         </section>
