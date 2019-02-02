@@ -1,11 +1,9 @@
 # Liste de questions pour mon mentor
 
-## Menu en haut à droite
-
-- idem pour le trait bleu dans le slider
 
 ## Slider
 
+- Trait bleu en bas
 - Image en HTML ou CSS ?
 - Flèches dans l'image
 
@@ -22,3 +20,8 @@
 ## Pied de page
 
 - Intégration de plan : capture ou iFrame ?
+
+## SEO
+
+- voir les textes
+- optimisation SEO : meta, H1, balises sémantiques
