@@ -26,7 +26,7 @@ Cyril Gallitre - février 2019
 /* Contenus principaux */
 
 #container{
-    width:1200px;
+    width:1600px;
     margin:auto;
 }
 
@@ -63,7 +63,6 @@ section .description{
 }
 
 section{
-    margin-top:20px;
     padding-top:10px;
 }
 
@@ -76,7 +75,7 @@ hr{
     padding: 0 0 0 0;
     width:10%;
     margin:-25px auto 30px auto;
-    border: 1px solid #cdcdcd;
+    border: 1px solid #d3d3d3;
 }
 
 /* En-tête */

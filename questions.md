@@ -25,3 +25,12 @@
 
 - voir les textes
 - optimisation SEO : meta, H1, balises sémantiques
+
+
+
+# Eléments de Soutenance
+
+- Utilisation de Flexbox et imbrication des boîtes
+- Position relative / absolute et fixed pour la barre de menus
+- fontawesome : icônes et piles
+- :hover sur 2 classes "frère" = le plus (utilisé par les boutons de filtres des projets)
