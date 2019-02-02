@@ -26,8 +26,9 @@ Cyril Gallitre - février 2019
 /* Contenus principaux */
 
 #container{
-    width:1600px;
+    width:auto;
     margin:auto;
+    max-width: 1600px;
 }
 
 body{
@@ -88,6 +89,8 @@ header{
     height:70px;
     padding-top:10px;
     z-index:5;
+    max-width:1600px;
+    margin:auto;
 }
 
 #wrap_header{
@@ -133,10 +136,10 @@ nav a:hover{
     background: url(../images/slider/bg1.jpg) no-repeat center;
     height:650px;
     color:#ffffff;
-    display: flex;
+/*    display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: center; */
 }
 
 .name{
@@ -198,8 +201,13 @@ nav a:hover{
 /* Services */
 #services{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
 }
+
+#description_services{
+    max-with:50%;
+}
+
 
 #UI, #SEO, #UX{
     display:flex;
@@ -219,10 +227,6 @@ nav a:hover{
 
 .icones_blanc{
     color:#fff;
-}
-
-#description_services{
-    width:50%;
 }
 
 .text_services{
@@ -276,7 +280,7 @@ nav a:hover{
 
 #list_project{
     display:flex;
-    justify-content: space-around;
+    justify-content: center;
     flex-wrap: wrap;
 }
 
@@ -302,7 +306,7 @@ nav a:hover{
 
 .rounded_button{
     position: absolute;
-    top:50%;
+    top:67%;
     right:10px;
     display:none;
 }

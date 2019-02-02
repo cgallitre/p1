@@ -1,0 +1,49 @@
+/* ------------ */
+/* Tablette  */
+/* ------------ */
+
+@media all and (max-width: 980px){
+
+    #services{
+        display: flex;
+        flex-direction:column;
+        justify-content: center;
+     }
+
+    #description_services{
+        margin-left:40px;
+    }
+
+    #img_services{
+        text-align: center;
+    }
+}
+
+/* ------------ */
+/* Smartphone  */
+/* ------------ */
+
+@media all and (max-width: 480px){
+
+    #services{
+        display: flex;
+        flex-direction:column;
+        justify-content: center;
+     }
+
+    #description_services{
+        margin-left:20px;
+    }
+
+    #img_services{
+        text-align: center;
+    }
+
+    #slider{
+        display: none;
+    }
+
+    section{
+        margin-top:60px;
+    }
+}
