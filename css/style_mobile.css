@@ -11,11 +11,15 @@
      }
 
     #description_services{
-        margin-left:40px;
+    
+        width: 80%;
+        margin:auto;
     }
 
     #img_services{
-        text-align: center;
+        width: 80%;
+        margin:auto;
+
     }
 }
 
@@ -32,11 +36,12 @@
      }
 
     #description_services{
-        margin-left:20px;
+        width: 80%;
+        margin:auto;
     }
 
     #img_services{
-        text-align: center;
+       display:none;
     }
 
     #slider{
@@ -45,5 +50,9 @@
 
     section{
         margin-top:60px;
+    }
+
+    footer form{
+        right : 40px;
     }
 }

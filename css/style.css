@@ -201,20 +201,28 @@ nav a:hover{
 /* Services */
 #services{
     display: flex;
-    justify-content: center;
+    justify-content:center;
+    align-items: center;
 }
 
 #description_services{
-    max-with:50%;
+    width:50%;
+}
+
+#img_services{
+    
+    background: url(../images/main-feature.png) no-repeat center;
+    height:300px;
+    width:50%;
 }
 
 
 #UI, #SEO, #UX{
     display:flex;
-    justify-content: space-between;
     align-items: center;
     width:90%;
     text-align: justify;
+
 }
 
 .icones_bleu{
@@ -363,6 +371,6 @@ address{
 
 #map_google{
     background: linear-gradient(rgba(86,192,224,0.45),rgba(86,192,224,0.45)), url(../images/carte.png) no-repeat center;
-    height: 500px;;
+    height: 500px;
 
 }
