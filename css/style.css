@@ -286,19 +286,21 @@ nav a:hover{
 #list_project{
     display:flex;
     justify-content: center;
+    align-items: center;
     flex-wrap: wrap;
 }
 
-#list_project figure{
+#list_project .one_project{
     position:relative;
     overflow:hidden;
+    margin: 0 20px 30px 20px;
 }
 
-#list_project figcaption{
+#list_project .title_project{
     display: none;
 }
 
-#list_project figure:hover figcaption{
+#list_project .one_project:hover .title_project{
     background-color: rgba(96, 96, 96, 0.6);
     color:#fff;
     font-size: 0.8em;
@@ -316,16 +318,16 @@ nav a:hover{
     display:none;
 }
 
-#list_project figure:hover .rounded_button{
+#list_project .one_project:hover .rounded_button{
     display:block;
 }
 
-#list_project figure p{
+#list_project .one_project p{
     padding: 0 0 0 5px;
     margin: 0px 0 5px 0;
 }
 
-#list_project figure h2{
+#list_project .one_project h2{
     padding: 0 0 0 5px;
     margin: 5px 0 5px 0;
     color:#FFF;
