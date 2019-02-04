@@ -134,12 +134,9 @@ nav a:hover{
     padding-top:30px;
     position:relative;
     background: url(../images/slider/bg1.jpg) no-repeat center;
-    height:650px;
+    height:550px;
     color:#ffffff;
-/*    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center; */
+
 }
 
 .name{
