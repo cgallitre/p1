@@ -67,7 +67,7 @@ section{
     padding-top:10px;
 }
 
-.title_line{
+.title-line{
     font-size: 0.8em;
     color:#379ece;
     text-align:center;
@@ -93,16 +93,14 @@ header{
     margin:auto;
 }
 
-#wrap_header{
+#wrap-header{
     display: flex;
     justify-content: space-around;
 }
 
 
 /* Menu de navigation */
-nav{
-    padding-top:10px;
-}
+nav { padding-top:10px; }
 
 nav ul{
     list-style-type: none;
@@ -131,17 +129,14 @@ nav a:hover{
 /* slider */
 
 #slider{
-    padding-top:30px;
+    padding-top:90px;
     position:relative;
     background: url(../images/slider/bg1.jpg) no-repeat center;
     height:550px;
     color:#ffffff;
-
 }
 
-.name{
-    color:#5cadd3;
-}
+.name { color:#5cadd3; }
 
 #slogan{
     position: absolute;
@@ -154,7 +149,7 @@ nav a:hover{
     width:70%;
 }
 
-#fleche_gauche{
+#fleche-gauche{
     position: absolute;
     top:45%;
     left:0;
@@ -164,7 +159,7 @@ nav a:hover{
     overflow:hidden;
 }
 
-#fleche_droite{
+#fleche-droite{
     position: absolute;
     top:45%;
     right:0;
@@ -202,17 +197,14 @@ nav a:hover{
     align-items: center;
 }
 
-#description_services{
-    width:50%;
-}
+#description-services { width:50%; }
 
-#img_services{
+#img-services{
     
     background: url(../images/main-feature.png) no-repeat center;
     height:300px;
     width:50%;
 }
-
 
 #UI, #SEO, #UX{
     display:flex;
@@ -222,35 +214,25 @@ nav a:hover{
 
 }
 
-.icones_bleu{
-    color :#5cadd3;
-}
+.icones-bleu { color :#5cadd3; }
 
-.icones_gris{
-    color: #f0f0f0;
-}
+.icones-gris { color: #f0f0f0; }
 
-.icones_blanc{
-    color:#fff;
-}
+.icones-blanc { color:#fff; }
 
-.text_services{
-    margin-left:20px;
-}
+.text-services { margin-left:20px; }
 
 /* Projets */
 
-#projets{
-    background-color: #f0f0f0;
-}
+#projets { background-color: #f0f0f0; }
 
-#project_buttons{
+#project-buttons{
     display: flex;
     justify-content: center;
     margin-bottom: 30px;
 }
 
-.filter_button{
+.filter-button{
     width:100px;
     position:relative;
     background-color: #cdcdcd;
@@ -264,43 +246,41 @@ nav a:hover{
     top:-23px;
     color:#f0f0f0; 
 }
-.wrap_button:nth-child(1) .filter_button{
+.wrap-button:nth-child(1) .filter-button{
     border-radius: 5px 0 0 5px;
 }
 
-.wrap_button:nth-child(4) .filter_button{
+.wrap-button:nth-child(4) .filter-button{
     border-radius: 0 5px 5px 0;
 }
 
-.filter_button:hover{
+.filter-button:hover{
     background-color: #5cadd3;
     color:#FFF;
     border-bottom: 4px solid #379ece;
 }
 
-.filter_button:hover + .fleche{
+.filter-button:hover + .fleche{
     color:#379ece;
     top:-24px;
 }
 
-#list_project{
+#list-project{
     display:flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
 }
 
-#list_project .one_project{
+#list-project .one-project{
     position:relative;
     overflow:hidden;
     margin: 0 20px 30px 20px;
 }
 
-#list_project .title_project{
-    display: none;
-}
+#list-project .title_project { display: none; }
 
-#list_project .one_project:hover .title_project{
+#list-project .one-project:hover .title_project{
     background-color: rgba(96, 96, 96, 0.6);
     color:#fff;
     font-size: 0.8em;
@@ -311,23 +291,23 @@ nav a:hover{
     width: 100%;
 }
 
-.rounded_button{
+.rounded-button{
     position: absolute;
     top:67%;
     right:10px;
     display:none;
 }
 
-#list_project .one_project:hover .rounded_button{
+#list-project .one-project:hover .rounded-button{
     display:block;
 }
 
-#list_project .one_project p{
+#list-project .one-project p{
     padding: 0 0 0 5px;
     margin: 0px 0 5px 0;
 }
 
-#list_project .one_project h2{
+#list-project .one-project h2{
     padding: 0 0 0 5px;
     margin: 5px 0 5px 0;
     color:#FFF;
@@ -351,24 +331,18 @@ footer form{
     width:260px;
 }
 
-footer textarea, footer .champs{
-    width: 90%;
-}
+footer textarea, footer .champs { width: 90%; }
 
 footer address p, h2{
     margin: 0 0 0 0;
     padding: 5px 0 0 0;
 }
 
-#enterprise_name{
-    font-weight: bold;
-}
+#enterprise-name { font-weight: bold; }
 
-address{
-    font-style:normal;
-}
+address { font-style:normal; }
 
-#map_google{
+#map-google{
     background: linear-gradient(rgba(86,192,224,0.45),rgba(86,192,224,0.45)), url(../images/carte.png) no-repeat center;
     height: 500px;
 
