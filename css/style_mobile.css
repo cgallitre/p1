@@ -29,6 +29,11 @@
 
 @media all and (max-width: 480px){
 
+    /* Contenus Principaux */
+    section{
+        margin-top:20px;
+    }
+
     /* Entête */
     header{
         height:100px;
@@ -97,15 +102,18 @@
        display:none;
     }
 
-    section{
-        margin-top:20px;
+
+
+    /* Projets */
+
+    .filter-button{
+        width:85px;
     }
+
+    /* Footer */
 
     footer form{
         right : 40px;
     }
 
-    .filter-button{
-        width:85px;
-    }
 }

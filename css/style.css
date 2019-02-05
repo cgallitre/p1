@@ -131,6 +131,7 @@ nav a:hover{
     background: url(../images/slider/bg1.jpg) no-repeat center;
     height:550px;
     color:#ffffff;
+    margin-bottom: -40px;
 }
 
 .name { color:#5cadd3; }
