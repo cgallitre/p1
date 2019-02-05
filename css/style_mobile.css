@@ -10,13 +10,13 @@
         justify-content: center;
      }
 
-    #description_services{
-    
+    #description-services{
+
         width: 80%;
         margin:auto;
     }
 
-    #img_services{
+    #img-services{
         width: 80%;
         margin:auto;
 
@@ -29,30 +29,83 @@
 
 @media all and (max-width: 480px){
 
+    /* Entête */
+    header{
+        height:100px;
+    }
+
+    #wrap-header{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    ul { 
+        margin : 0 auto 20px auto;
+    }
+
+    #slider{
+        background-size:cover;
+        height:200px;
+    }
+
+    #slogan{
+        position: absolute;
+        top:32%;
+        left:15%;
+        right:10%;
+    }
+
+    #slider h1{
+        font-size:1.2em;
+    }
+
+    #fleche-gauche{
+        top:50%;
+    }
+    
+    #fleche-droite{
+        top:50%;
+    }
+
+    .button{     
+        width:100px;     
+        padding: 8px 0 4px 0;
+
+    }
+
+    /* Services */
+
+    hr { width:20%; }
+
     #services{
         display: flex;
         flex-direction:column;
         justify-content: center;
+    
      }
 
-    #description_services{
+     .description { display:none; }
+
+    #description-services{
         width: 80%;
-        margin:auto;
+        margin:auto 0 auto 10px;
     }
 
-    #img_services{
+    #img-services{
        display:none;
     }
 
-    #slider{
-        display: none;
-    }
-
     section{
-        margin-top:60px;
+        margin-top:20px;
     }
 
     footer form{
         right : 40px;
+    }
+
+    .filter-button{
+        width:85px;
     }
 }
