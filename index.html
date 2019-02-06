@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr-fr">
+<html lang="fr">
 
 <head>
     <meta charset="UTF-8">
@@ -21,31 +21,29 @@
     <div id="container">
         <!-- bandeau supérieur fixe avec logo + menu -->
         <header>
-            <div id="wrap-header">
-                <!-- logo -->
-                <img src="images/logo.png" alt="Logo WebAgency">
-                <!-- Menu -->
-                <nav>
-                    <ul>
-                        <li><a href="#">Accueil</a></li>
-                        <li><a href="#">Services</a></li>
-                        <li><a href="#">Portfolio</a></li>
-                        <li><a href="#">Contact</a></li>
-                    </ul>
-                </nav>
-            </div>
+            <!-- logo -->
+            <img src="images/logo.png" alt="Logo WebAgency">
+            <!-- Menu -->
+            <nav>
+                <ul>
+                    <li><a id="active-home" href="#">Accueil</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
         </header>
 
         <!-- slider -->
         <div id="slider">
             <!-- Flèche de déplacement gauche -->
             <span id="fleche-gauche" class="fa-layers">
-                <i class="fas fa-circle icones_dark" data-fa-transform="grow-6 left-8"></i>
+                <i class="fas fa-circle icones-dark" data-fa-transform="grow-6 left-8"></i>
                 <i class="fas fa-chevron-left" data-fa-transform="shrink-8 left-3"></i>
             </span>
             <!-- Flèche de déplacement droite -->
             <span id="fleche-droite" class="fa-layers">
-                <i class="fas fa-circle icones_dark" data-fa-transform="grow-6 right-8"></i>
+                <i class="fas fa-circle icones-dark" data-fa-transform="grow-6 right-8"></i>
                 <i class="fas fa-chevron-right" data-fa-transform="shrink-8 right-3"></i>
             </span>
             <!-- Slogan -->
@@ -59,7 +57,7 @@
         <!-- Services -->
         <section>
             <!-- Présentation des services -->
-            <h1>Nos services</h1>
+            <h2>Nos services</h2>
             <p class="title-line">
                 <span class="fa-stack">
                     <i class="fas fa-circle  fa-stack-1x icones-blanc" data-fa-transform="grow-8"></i>
@@ -73,13 +71,11 @@
             <!-- Détails des services -->
             <div id="services">
                 <!-- Image principale à gauche -->
-                <div id="img-services">
-
-                </div>
+                <img id="img-services" src="images/main-feature.png" alt="Les services de la WebAgency">
                 <!-- Liste des services -->
                 <div id="description-services">
                     <!-- Service UX -->
-                    <div id="UX">
+                    <div class="one-service">
                         <!-- Logo UX-->
                         <div class="fa-2x">
                             <span class="fa-layers">
@@ -92,13 +88,13 @@
                         </div>
                         <!-- UX contenu textuel-->
                         <div class="text-services">
-                            <h2>UX design</h2>
+                            <h3>UX design</h3>
                             <p>Parce que l'eXpérience Utilisateur est la clé de succès de votre site, nous portons
                                 toute notre attention sur ce point, premier élément de votre projet.</p>
                         </div>
                     </div>
                     <!-- Service UI-->
-                    <div id="UI">
+                    <div class="one-service"">
                         <!-- Logo UI -->
                         <div class="fa-2x">
                             <span class="fa-layers">
@@ -111,14 +107,14 @@
                         </div>
                         <!-- UI Contenu textuel-->
                         <div class="text-services">
-                            <h2>UI design</h2>
+                            <h3>UI design</h3>
                             <p>Point de rencontre entre l'internaute et votre site, l'Interface Utilisateur doit être
                                 soignée et répondre aux exigences de l'eXpérience Utilisateur déterminée en amont du
                                 projet.</p>
                         </div>
                     </div>
                     <!-- Service SEO -->
-                    <div id="SEO">
+                    <div class="one-service">
                         <!-- Logo SEO -->
                         <div class="fa-2x">
                             <span class="fa-layers">
@@ -131,7 +127,7 @@
                         </div>
                         <!-- SEO Contenu textuel -->
                         <div class="text-services">
-                            <h2>SEO</h2>
+                            <h3>SEO</h3>
                             <p>Positionner votre site dans les premiers résultats des moteurs de recherche en fonction
                                 des mots clés que vous avez déterminés : un travail d'experts que nous mettons à votre
                                 disposition.</p>
@@ -144,7 +140,7 @@
         <!-- Projets -->
         <section id="projets">
             <!-- Présentation des projets-->
-            <h1>Nos projets</h1>
+            <h2>Nos projets</h2>
             <p class="title-line">
                 <span class="fa-stack">
                     <i class="fas fa-circle  fa-stack-1x icones-blanc" data-fa-transform="grow-8"></i>
@@ -155,31 +151,33 @@
             <p class="description">Découvrez nos dernières réalisations : elles sont le meilleur témoignage de nos
                 réussites. Utilisez la barre de commandes ci-dessous pour sélectionner la catégorie qui vous intéresse.</p>
             <!-- Barre de sélection des projets -->
-            <div id="project-buttons">
-                <div class="wrap-button">
-                    <p class="filter-button">All Works</p>
-                    <i class="fas fa-sort-down fleche"></i>
-                </div>
-                <div class="wrap-button">
-                    <p class="filter-button">Creative</p>
-                    <i class="fas fa-sort-down fleche"></i>
-                </div>
-                <div class="wrap-button">
-                    <p class="filter-button">Corporate</p>
-                    <i class="fas fa-sort-down fleche"></i>
-                </div>
-                <div class="wrap-button">
-                    <p class="filter-button">Portfolio</p>
-                    <i class="fas fa-sort-down fleche"></i>
-                </div>
-            </div>
+            <nav>
+                <ul id="project-buttons">
+                    <li class="wrap-button">
+                        <a id="active-allworks" class="filter-button" href="#">Tout</a>
+                        <i id="active-arrow" class="fas fa-sort-down fleche"></i>
+                    </li>
+                    <li class="wrap-button">
+                        <a class="filter-button" href="#">Créatif</a>
+                        <i class="fas fa-sort-down fleche"></i>
+                    </li>
+                    <li class="wrap-button">
+                        <a class="filter-button" href="#">Entreprise</a>
+                        <i class="fas fa-sort-down fleche"></i>
+                    </li>
+                    <li class="wrap-button">
+                        <a class="filter-button" href="#">Portfolio</a>
+                        <i class="fas fa-sort-down fleche"></i>
+                    </li>
+                </ul>
+            <nav>
             <!-- Liste des projets sous forme de vignettes -->
             <div id="list-project">
                 <div class="one-project">
                     <img src="images/portfolio/01_min.jpg" alt="Projet 1">
                     <div class="title_project">
-                        <h2>Portfolio Item 1</h2>
-                        <p>Lorem Ipsum Dolor Sit</p>
+                        <h3>Lunettes sur mesure</h3>
+                        <p>Opticien pour tous</p>
                     </div>
                     <div class="rounded-button">
                         <span class="fa-stack">
@@ -192,8 +190,8 @@
                 <div class="one-project">
                     <img src="images/portfolio/02_min.jpg" alt="Projet 2">
                     <div class="title_project">
-                        <h2>Portfolio Item 2</h2>
-                        <p>Lorem Ipsum Dolor Sit</p>
+                        <h3>Origamania</h3>
+                        <p>Le site des origami ludiques</p>
                     </div>
                     <div class="rounded-button">
                         <span class="fa-stack">
@@ -208,8 +206,8 @@
                 <div class="one-project">
                     <img src="images/portfolio/03_min.jpg" alt="Projet 3">
                     <div class="title_project">
-                        <h2>Portfolio Item 3</h2>
-                        <p>Lorem Ipsum Dolor Sit</p>
+                        <h3>Le coiffeur tendance</h3>
+                        <p>pour elle et lui</p>
                     </div>
                     <div class="rounded-button">
                         <span class="fa-stack">
@@ -224,8 +222,8 @@
                 <div class="one-project">
                     <img src="images/portfolio/04_min.jpg" alt="Projet 4">
                     <div class="title_project">
-                        <h2>Portfolio Item 4</h2>
-                        <p>Lorem Ipsum Dolor Sit</p>
+                        <h3>Mockup Soft</h3>
+                        <p>logiciel pour donner vie à vos projets</p>
                     </div>
                     <div class="rounded-button">
                         <span class="fa-stack">
@@ -240,8 +238,8 @@
                 <div class="one-project">
                     <img src="images/portfolio/05_min.jpg" alt="Projet 5">
                     <div class="title_project">
-                        <h2>Portfolio Item 5</h2>
-                        <p>Lorem Ipsum Dolor Sit</p>
+                        <h3>Black & White</h3>
+                        <p>Prêt à porter</p>
                     </div>
                     <div class="rounded-button">
                         <span class="fa-stack">
@@ -256,8 +254,8 @@
                 <div class="one-project">
                     <img src="images/portfolio/06_min.jpg" alt="Projet 6">
                     <div class="title_project">
-                        <h2>Portfolio Item 6</h2>
-                        <p>Lorem Ipsum Dolor Sit</p>
+                        <h3>World travels</h3>
+                        <p>Peinture style art moderne</p>
                     </div>
                     <div class="rounded-button">
                         <span class="fa-stack">
@@ -272,8 +270,8 @@
                 <div class="one-project">
                     <img src="images/portfolio/07_min.jpg" alt="Projet 7">
                     <div class="title_project">
-                        <h2>Portfolio Item 7</h2>
-                        <p>Lorem Ipsum Dolor Sit</p>
+                        <h3>The rocket</h3>
+                        <p>Dessinateur industriel</p>
                     </div>
                     <div class="rounded-button">
                         <span class="fa-stack">
@@ -288,8 +286,8 @@
                 <div class="one-project">
                     <img src="images/portfolio/08_min.jpg" alt="Projet 8">
                     <div class="title_project">
-                        <h2>Portfolio Item 8</h2>
-                        <p>Lorem Ipsum Dolor Sit</p>
+                        <h3>Fournitures express</h3>
+                        <p>Tout pour votre bureau</p>
                     </div>
                     <div class="rounded-button">
                         <span class="fa-stack">
@@ -310,7 +308,7 @@
             <div id="map-google"></div>
             <!-- Formulaire de contact-->
             <form method="post" action="#">
-                <h1>Contact Info</h1>
+                <h2>Contact Info</h2>
                 <address>
                     <p id="enterprise-name">WebAgency SAS</p>
                     <p>25 Rue d'Hauteville 75010 Paris</p>
@@ -320,7 +318,7 @@
                 <p><input class="champs" type="email" name="email" size="30" placeholder="Email" /></p>
                 <p><input class="champs" type="text" name="sujet" size="30" placeholder="Sujet" /></p>
                 <p><textarea name="message" rows="10" placeholder="Message"></textarea></p>
-                <input class="button" type="submit" value="Envoyer le message" />
+                <input class="button" type="submit" value="Envoyer" />
             </form>
         </footer>
     </div>

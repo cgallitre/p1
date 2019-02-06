@@ -1,24 +1,9 @@
 # Liste de questions pour mon mentor
 
 
-## Slider
+## Menu Accueil
 
-- Trait bleu en bas
-- Image en HTML ou CSS ?
-
-## Services
-
-- Trait avec le point pour souligner le H1 : HR ?
-
-
-## Pied de page
-
-- Intégration de plan : capture ou iFrame ?
-
-## SEO
-
-- voir les textes
-- optimisation SEO : meta, H1, balises sémantiques
+Lien actif en permanence ? Faut-il que la barre se supprime quand on passe sur les autres liens ?
 
 
 # Eléments de Soutenance

@@ -12,14 +12,10 @@
 
     #description-services{
 
-        width: 80%;
-        margin:auto;
     }
 
     #img-services{
-        width: 80%;
-        margin:auto;
-
+        width:70%;
     }
 }
 
@@ -94,8 +90,7 @@
      .description { display:none; }
 
     #description-services{
-        width: 80%;
-        margin:auto 0 auto 10px;
+  
     }
 
     #img-services{

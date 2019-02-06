@@ -32,7 +32,6 @@ Cyril Gallitre - février 2019
 }
 
 body{
-    margin-top:20px;
     font-family: 'fontawesomeregular','Trebuchet MS', Arial, sans-serif;
     color:#555555;
 }
@@ -41,7 +40,7 @@ p{
     font-size: 0.9em;
 }
 
-section h1{
+section h2{
     text-transform: uppercase;  
     color:#000;
     font-size:2em;
@@ -50,7 +49,7 @@ section h1{
     font-family: 'robotobold', 'Trebuchet MS', Arial, sans-serif;
 }
 
-section h2{
+section h3{
     font-size:1.2em;
     font-family: 'robotobold', 'Trebuchet MS', Arial, sans-serif;
     color:#000;
@@ -64,7 +63,7 @@ section .description{
 }
 
 section{
-    padding-top:10px;
+    padding: 100px 0 100px 0;
 }
 
 .title-line{
@@ -86,43 +85,46 @@ header{
     left:0;
     right:0;
     background-color: #ffffff;
-    height:70px;
-    padding-top:10px;
+    padding:10px 0 10px 0;
     z-index:5;
-}
-
-#wrap-header{
     display: flex;
     justify-content: space-around;
 }
 
 
 /* Menu de navigation */
-nav { padding-top:10px; }
+header nav { padding-top:10px; }
 
-nav ul{
+header nav ul{
     list-style-type: none;
     display:flex;
     justify-content: space-around;
 }
 
-nav li{
-    margin-right:15px;
+header nav li{
     color : #555555;
     font-size: 0.9em;
-    
+    width:70px;
 }
 
-nav a{
+header nav a{
     text-decoration: none;
     color:#555555;
 }
 
-nav a:hover{
+header nav a:hover{
     border-top: 2px solid #5cadd3; 
     padding-top:25px;
 }
 
+#active-home{
+    border-top: 2px solid #5cadd3; 
+    padding-top:25px;
+}
+
+header nav a:hover .active{
+        border-top:0;
+}
 
 /* slider */
 #slider{
@@ -183,9 +185,8 @@ nav a:hover{
     border-bottom: 4px solid #cdcdcd;
 }
 
-.icones_dark{
-    color:rgba(85, 85, 85, .8);
-    
+.icones-dark{
+    color:rgba(85, 85, 85, .8);  
 }
 
 /* Services */
@@ -193,24 +194,27 @@ nav a:hover{
     display: flex;
     justify-content:center;
     align-items: center;
+    flex-wrap: wrap;
 }
 
-#description-services { width:50%; }
+#description-services{
+    max-width:510px;
+}
 
 #img-services{
-    
-    background: url(../images/main-feature.png) no-repeat center;
-    height:300px;
-    width:50%;
+    display:block;
+    max-width:510px;
 }
 
-#UI, #SEO, #UX{
+.one-service{
     display:flex;
+    justify-content: center;
     align-items: center;
-    width:90%;
     text-align: justify;
+    padding: 0 50px 0 50px;
 
 }
+
 
 .icones-bleu { color :#5cadd3; }
 
@@ -228,22 +232,26 @@ nav a:hover{
     display: flex;
     justify-content: center;
     margin-bottom: 30px;
+    list-style-type: none;
 }
 
 .filter-button{
+    display:block;
     width:100px;
     position:relative;
     background-color: #cdcdcd;
-    text-align: center;
     padding: 12px 0 8px 0;
     border-bottom: 4px solid #cdcdcd;
+    text-align:center;
+    color:#555555;
+    text-decoration: none;
 }
 .fleche{
     position:relative;
     left:45px;
-    top:-23px;
     color:#f0f0f0; 
 }
+
 .wrap-button:nth-child(1) .filter-button{
     border-radius: 5px 0 0 5px;
 }
@@ -258,10 +266,21 @@ nav a:hover{
     border-bottom: 4px solid #379ece;
 }
 
+#active-allworks{
+    background-color: #5cadd3;
+    color:#FFF;
+    border-bottom: 4px solid #379ece;
+}
+
+#active-arrow{
+    color:#379ece;
+    top:-10px;
+}
 .filter-button:hover + .fleche{
     color:#379ece;
-    top:-24px;
+    top:-10px;
 }
+
 
 #list-project{
     display:flex;
@@ -305,7 +324,7 @@ nav a:hover{
     margin: 0px 0 5px 0;
 }
 
-#list-project .one-project h2{
+#list-project .one-project h3{
     padding: 0 0 0 5px;
     margin: 5px 0 5px 0;
     color:#FFF;
@@ -330,7 +349,7 @@ footer form{
 
 footer textarea, footer .champs { width: 90%; }
 
-footer address p, h2{
+footer address p,{
     margin: 0 0 0 0;
     padding: 5px 0 0 0;
 }
@@ -338,6 +357,8 @@ footer address p, h2{
 #enterprise-name { font-weight: bold; }
 
 address { font-style:normal; }
+
+textarea { resize:none; }
 
 #map-google{
     background: linear-gradient(rgba(86,192,224,0.45),rgba(86,192,224,0.45)), url(../images/carte.png) no-repeat center;
