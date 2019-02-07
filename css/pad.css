@@ -1,32 +1,25 @@
 
-@media all and (min-width:480px) and (max-width: 1024px){
+@media all and (min-width:481px) {
 
     /* Contenus principaux */
 
-    hr{
-        width:20%;
-    }
+    hr { width:20%; }
     
+    section { padding: 75px 0 75px 0; }
+
     /* Entête */
-    header{
-        justify-content: space-around;
-    }
+    header { justify-content: space-around; }
 
     /* Slider */
-
     #slider{
-        margin-top:-40px;
-        height: 550px;
-        margin-bottom: -40px;
+        margin-top:0px;
+        height: 400px;
+        margin-bottom: -60px;
     }
 
-    #slider h1{
-        font-size:1.8em;
-    }
+    #slider h1 { font-size:1.8em; }
 
-    #slider p{
-        display: block;
-    }
+    #slider p { display: block; }
 
     #slogan{
         top:30%;
@@ -72,7 +65,7 @@
         padding:0 0 20px 20px;
         bottom :-35px;
         right : 100px;
-
+        background-color: rgba(250, 250, 250, .75);
     }
 
     #map-google{

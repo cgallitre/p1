@@ -5,6 +5,11 @@
 
 Lien actif en permanence ? Faut-il que la barre se supprime quand on passe sur les autres liens ?
 
+## MediaQuries
+
+- valeurs des points de rupture ?
+
+
 
 # Eléments de Soutenance
 

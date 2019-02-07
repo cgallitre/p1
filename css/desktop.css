@@ -1,0 +1,35 @@
+@media all and (min-width:1025px){
+
+    /* Contenus principaux */
+    #container{
+        width:auto;
+        margin:auto;
+        max-width: 1600px;
+    }
+
+    hr{
+        width: 10%;
+    }
+
+    section{
+        padding: 100px 0 100px 0;
+    }
+     /* Slider */
+
+     #slider{
+        margin-top:0px;
+        margin-bottom: 0px;
+        padding-top:90px;
+        background-size:cover;
+    }
+
+    /* Portfolio */
+    .title-project { display: none; }
+
+    .rounded-button { display: none; }
+
+    .one-project:hover .rounded-button { display:block; }
+
+    .one-project:hover .title-project { display: block; }
+
+}

@@ -228,6 +228,7 @@ header nav a:hover .active{
 
 #projets { background-color: #f0f0f0; }
 
+/* Barre de boutons */
 #project-buttons{
     display: flex;
     justify-content: center;
@@ -281,7 +282,7 @@ header nav a:hover .active{
     top:-10px;
 }
 
-
+/* portfolio */
 #list-project{
     display:flex;
     justify-content: center;
