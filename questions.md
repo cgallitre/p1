@@ -12,3 +12,6 @@ Lien actif en permanence ? Faut-il que la barre se supprime quand on passe sur l
 - Position relative / absolute et fixed pour la barre de menus
 - fontawesome : icônes et piles
 - :hover sur 2 classes "frère" = le plus (utilisé par les boutons de filtres des projets) dans le sélecteur
+- Commencez par le mobile first !
+- Certaines règles CSS (flex-wrap) permettrait de ne pas utiliser les mediaqueries
+- 

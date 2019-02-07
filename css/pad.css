@@ -1,7 +1,84 @@
 
-@media all and (min-width=480 and max-width: 980px){
+@media all and (min-width:480px) and (max-width: 1024px){
 
-    body{
-        background-color: blue;;
+    /* Contenus principaux */
+
+    hr{
+        width:20%;
     }
+    
+    /* Entête */
+    header{
+        justify-content: space-around;
+    }
+
+    /* Slider */
+
+    #slider{
+        margin-top:-40px;
+        height: 550px;
+        margin-bottom: -40px;
+    }
+
+    #slider h1{
+        font-size:1.8em;
+    }
+
+    #slider p{
+        display: block;
+    }
+
+    #slogan{
+        top:30%;
+        left:8%;
+    }
+    #fleche-gauche{
+        position: absolute;
+        top:45%;
+        left:0;
+        font-size:3.5em;
+        display: inline-block;
+        height: 80px;
+        overflow:hidden;
+    }
+    
+    #fleche-droite{
+        position: absolute;
+        top:45%;
+        right:0;
+        font-size:3.5em;
+        display: inline-block;
+        height: 80px;
+        overflow:hidden;
+    }
+
+    .icones-dark{
+        color:rgba(85, 85, 85, .8);  
+    }
+
+    /* Services */
+    
+    #description-services{
+        max-width:500px;
+    }
+    
+    #img-services{
+        max-width:500px;
+    }
+
+    /* Footer */
+    footer form{
+        position: absolute;
+        padding:0 0 20px 20px;
+        bottom :-35px;
+        right : 100px;
+
+    }
+
+    #map-google{
+        background: linear-gradient(rgba(86,192,224,0.45),rgba(86,192,224,0.45)), url(../images/carte.png) no-repeat center;
+        height: 500px;
+    
+    }
+
 }

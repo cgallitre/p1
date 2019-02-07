@@ -323,3 +323,9 @@ textarea { resize:none; }
     color:#FFF;
     border-bottom: 4px solid #379ece;
 }
+
+.button:hover{
+    background-color: #cdcdcd;
+    color:#555555;
+    border-bottom: 4px solid #cdcdcd;
+}
