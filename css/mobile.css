@@ -1,6 +1,8 @@
 /* Style WebAgency 
 Cyril Gallitre - février 2019
+Design "mobile first"
 */
+
 @font-face {
     font-family: 'fontawesomeregular';
     src: url('../fonts/fontawesome-webfont.eot') format('eot'),
@@ -25,12 +27,6 @@ Cyril Gallitre - février 2019
 
 /* Contenus principaux */
 
-#container{
-    width:auto;
-    margin:auto;
-    max-width: 1600px;
-}
-
 body{
     font-family: 'fontawesomeregular','Trebuchet MS', Arial, sans-serif;
     color:#555555;
@@ -43,7 +39,7 @@ p{
 section h2{
     text-transform: uppercase;  
     color:#000;
-    font-size:2em;
+    font-size:1.8em;
     text-align: center;
     margin-bottom: 0;
     font-family: 'robotobold', 'Trebuchet MS', Arial, sans-serif;
@@ -63,7 +59,7 @@ section .description{
 }
 
 section{
-    padding: 100px 0 100px 0;
+    padding: 50px 0 50px 0;
 }
 
 .title-line{
@@ -73,8 +69,8 @@ section{
 }
 hr{
     padding: 0 0 0 0;
-    width:10%;
-    margin:-25px auto 30px auto;
+    width:30%;
+    margin:-26px auto 30px auto;
     border: 1px solid #d3d3d3;
 }
 
@@ -85,20 +81,21 @@ header{
     left:0;
     right:0;
     background-color: #ffffff;
-    padding:10px 0 10px 0;
+    padding:10px 0 5px 0;
     z-index:5;
     display: flex;
-    justify-content: space-around;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 }
 
-
 /* Menu de navigation */
-header nav { padding-top:10px; }
+header nav { padding-top:20px; }
 
 header nav ul{
     list-style-type: none;
     display:flex;
-    justify-content: space-around;
+    justify-content: center;
 }
 
 header nav li{
@@ -128,65 +125,34 @@ header nav a:hover .active{
 
 /* slider */
 #slider{
-    padding-top:90px;
+    margin-top:100px;
     position:relative;
     background: url(../images/slider/bg1.jpg) no-repeat center;
-    height:550px;
+    height:220px;
+    background-size:contain;
     color:#ffffff;
-    margin-bottom: -40px;
 }
 
 .name { color:#5cadd3; }
 
 #slogan{
     position: absolute;
-    top:30%;
-    left:15%;
+    top:35%;
+    left:3%;
 }
 
 #slider h1{
     text-transform: uppercase;
-    width:70%;
+    font-size: 1.2em;
+    width: 70%;
 }
 
-#fleche-gauche{
-    position: absolute;
-    top:45%;
-    left:0;
-    font-size:3.5em;
-    display: inline-block;
-    height: 80px;
-    overflow:hidden;
+#slider p{
+    display: none;
 }
 
-#fleche-droite{
-    position: absolute;
-    top:45%;
-    right:0;
-    font-size:3.5em;
-    display: inline-block;
-    height: 80px;
-    overflow:hidden;
-}
-
-.button{
-    background-color: #5cadd3;
-    width:120px;
-    text-align: center;
-    padding: 12px 0 8px 0;
-    border-radius: 5px;
-    color:#FFF;
-    border-bottom: 4px solid #379ece;
-}
-
-.button:hover{
-    background-color: #cdcdcd;
-    color:#555555;
-    border-bottom: 4px solid #cdcdcd;
-}
-
-.icones-dark{
-    color:rgba(85, 85, 85, .8);  
+#fleche-gauche, #fleche-droite{
+    display: none;
 }
 
 /* Services */
@@ -215,7 +181,6 @@ header nav a:hover .active{
 
 }
 
-
 .icones-bleu { color :#5cadd3; }
 
 .icones-gris { color: #f0f0f0; }
@@ -228,16 +193,18 @@ header nav a:hover .active{
 
 #projets { background-color: #f0f0f0; }
 
+/* Barre de boutons */
 #project-buttons{
     display: flex;
     justify-content: center;
-    margin-bottom: 30px;
+    margin:0 0 20px -40px;
     list-style-type: none;
 }
 
+
 .filter-button{
     display:block;
-    width:100px;
+    width:85px;
     position:relative;
     background-color: #cdcdcd;
     padding: 12px 0 8px 0;
@@ -281,7 +248,7 @@ header nav a:hover .active{
     top:-10px;
 }
 
-
+/* portfolio */
 #list-project{
     display:flex;
     justify-content: center;
@@ -289,22 +256,18 @@ header nav a:hover .active{
     flex-wrap: wrap;
 }
 
-#list-project .one-project{
+.one-project{
     position:relative;
     overflow:hidden;
     margin: 0 20px 30px 20px;
 }
 
-#list-project .title-project { display: none; }
-
-#list-project .one-project:hover .title_project{
+.title-project{
+    position: absolute;
+    bottom:3px;
     background-color: rgba(96, 96, 96, 0.6);
     color:#fff;
     font-size: 0.8em;
-    position: absolute;
-    bottom:3px;
-    left:0;
-    display: block;
     width: 100%;
 }
 
@@ -312,39 +275,30 @@ header nav a:hover .active{
     position: absolute;
     top:67%;
     right:10px;
-    display:none;
 }
 
-#list-project .one-project:hover .rounded-button{
-    display:block;
-}
-
-#list-project .one-project p{
+.one-project p{
     padding: 0 0 0 5px;
     margin: 0px 0 5px 0;
 }
 
-#list-project .one-project h3{
+.one-project h3{
     padding: 0 0 0 5px;
     margin: 5px 0 5px 0;
     color:#FFF;
 }
 
-
 /* Pied de page */
 
 footer{
     position:relative;
-    font-size: 0.7em;
+    font-size: 0.9em;
 }
 
 footer form{
-    position: absolute;
-    padding:0 0 20px 20px;
-    top : 30px;
-    right : 100px;
     background-color: rgba(250, 250, 250, .75);
     width:260px;
+    margin:50px auto 50px auto;
 }
 
 footer textarea, footer .champs { width: 90%; }
@@ -360,8 +314,12 @@ address { font-style:normal; }
 
 textarea { resize:none; }
 
-#map-google{
-    background: linear-gradient(rgba(86,192,224,0.45),rgba(86,192,224,0.45)), url(../images/carte.png) no-repeat center;
-    height: 500px;
-
+.button{
+    background-color: #5cadd3;
+    width:120px;
+    text-align: center;
+    padding: 12px 0 8px 0;
+    border-radius: 5px;
+    color:#FFF;
+    border-bottom: 4px solid #379ece;
 }
