@@ -7,6 +7,8 @@
     
     section { padding: 75px 0 75px 0; }
 
+    section .description { width:50% }
+
     /* Entête */
     header { justify-content: space-around; }
 
@@ -62,8 +64,9 @@
     /* Footer */
     footer form{
         position: absolute;
+        margin: auto;
         padding:0 0 20px 20px;
-        bottom :-35px;
+        bottom :7px;
         right : 100px;
         background-color: rgba(250, 250, 250, .75);
     }
