@@ -1,4 +1,5 @@
-@media all and (min-width:1025px){
+/* Version Desktop */
+/* ----------------*/
 
     /* Contenus principaux */
     #container{
@@ -12,7 +13,7 @@
     }
 
     section{
-        padding: 100px 0 100px 0;
+        padding: 0px 0 100px 0;
     }
      /* Slider */
 
@@ -24,6 +25,9 @@
     }
 
     /* Portfolio */
+
+    #projets { padding-top:100px;}
+
     .title-project { display: none; }
 
     .rounded-button { display: none; }
@@ -31,5 +35,3 @@
     .one-project:hover .rounded-button { display:block; }
 
     .one-project:hover .title-project { display: block; }
-
-}

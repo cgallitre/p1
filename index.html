@@ -5,11 +5,9 @@
     <meta charset="UTF-8">
     <meta name="author" content="Cyril Gallitre">
     <meta name="description" content="WebAgency, l'agence de tous vos projets web">
-    <!-- <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/style_mobile.css"> -->
     <link rel="stylesheet" href="css/mobile.css">
-    <link rel="stylesheet" href="css/pad.css">
-    <link rel="stylesheet" href="css/desktop.css">
+    <link rel="stylesheet" media="screen and (min-width: 481px)" href="css/pad.css">
+    <link rel="stylesheet" media="screen and (min-width: 1025px)" href="css/desktop.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ"
         crossorigin="anonymous">
     <script defer src="https://use.fontawesome.com/releases/v5.7.0/js/all.js" integrity="sha384-qD/MNBVMm3hVYCbRTSOW130+CWeRIKbpot9/gR1BHkd7sIct4QKhT1hOPd+2hO8K"
@@ -20,7 +18,7 @@
 </head>
 
 <body>
-    <!-- container englobe toute le contenu de la page -->
+    <!-- container englobe toute le contenu de la page - Limite la largeur à 1600px -->
     <div id="container">
         <!-- bandeau supérieur fixe avec logo + menu -->
         <header>
@@ -29,7 +27,7 @@
             <!-- Menu -->
             <nav>
                 <ul>
-                    <li><a id="active-home" href="#">Accueil</a></li>
+                    <li><a href="#" id="active-home">Accueil</a></li>
                     <li><a href="#">Services</a></li>
                     <li><a href="#">Portfolio</a></li>
                     <li><a href="#">Contact</a></li>
@@ -53,12 +51,12 @@
             <div id="slogan">
                 <h1><span class="name">WEBAGENCY</span> : L'AGENCE DE TOUS VOS PROJETS !</h1>
                 <p>Vous avez un projet ? La WebAgency vous aide à le réaliser !</p>
-                <p class="button">Plus d'infos</p>
+                <p class="button">Plus d'infos</button>
             </div>
         </div>
 
         <!-- Services -->
-        <section>
+        <section id="nos-services">
             <!-- Présentation des services -->
             <h2>Nos services</h2>
             <p class="title-line">
@@ -97,7 +95,7 @@
                         </div>
                     </div>
                     <!-- Service UI-->
-                    <div class="one-service"">
+                    <div class="one-service">
                         <!-- Logo UI -->
                         <div class="fa-2x">
                             <span class="fa-layers">
@@ -173,7 +171,7 @@
                         <i class="fas fa-sort-down fleche"></i>
                     </li>
                 </ul>
-            <nav>
+            </nav>
             <!-- Liste des projets sous forme de vignettes -->
             <div id="list-project">
                 <div class="one-project">
@@ -304,9 +302,8 @@
                 </div>
             </div>
         </section>
-
         <!-- Pied de page -->
-        <footer>
+        <footer id="contact">
             <!-- Carte -->
             <div id="map-google"></div>
             <!-- Formulaire de contact-->
