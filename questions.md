@@ -5,9 +5,15 @@
 
 Lien actif en permanence ? Faut-il que la barre se supprime quand on passe sur les autres liens ?
 
-## MediaQuries
+## MediaQueries
 
 - valeurs des points de rupture ?
+
+## Javascript
+
+Avec fontawesome ? Autorisé ?
+
+## Ajouter l'attribut LABEL dans les champs de formulaire
 
 
 
