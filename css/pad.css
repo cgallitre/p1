@@ -77,3 +77,8 @@
         height: 500px;
     
     }
+
+    /* Version paysage */
+    @media screen and (orientation:landscape){
+        #slider { height:500px; }
+    }
