@@ -24,6 +24,9 @@
         height: 550px;
     }
 
+    /* Alignement des liens sur ancre */
+    section:target { padding-top: 70px; }
+
     /* Portfolio */
 
     #projets { padding-top:100px;}

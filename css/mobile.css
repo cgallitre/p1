@@ -47,7 +47,7 @@ section h2{
 
 section h3{
     font-size:1.2em;
-    font-family: 'robotobold', 'Trebuchet MS', Arial, sans-serif;
+    font-family: 'fontawesomeregular', 'Trebuchet MS', Arial, sans-serif;
     color:#000;
 }
 
@@ -121,10 +121,6 @@ header nav a:focus{
         color:red;
 }
 
-#active-home{
-    border-top: 2px solid #5cadd3; 
-    padding-top:25px;
-}
 
 header nav a:hover .active { border-top:0; }
 
@@ -138,7 +134,7 @@ header nav a:hover .active { border-top:0; }
     color:#ffffff;
 }
 
-.name { 
+strong { 
     color:#5cadd3;
     font-size:1.1em;
  }
@@ -159,7 +155,7 @@ header nav a:hover .active { border-top:0; }
     display: none;
 }
 
-#fleche-gauche, #fleche-droite{
+#left-arrow, #right-arrow{
     display: none;
 }
 
@@ -195,7 +191,7 @@ header nav a:hover .active { border-top:0; }
 
 .icones-blanc { color:#fff; }
 
-.text-services { margin-left:20px; }
+.text-service { margin-left:20px; }
 
 /* Projets */
 
@@ -220,11 +216,12 @@ header nav a:hover .active { border-top:0; }
     text-align:center;
     color:#555555;
     text-decoration: none;
+    font-size:0.9em;
 }
 .fleche{
     position:relative;
-    left:45px;
-    color:#f0f0f0; 
+    left:45%;
+    color:#ffffff; 
 }
 
 .wrap-button:nth-child(1) .filter-button{
@@ -257,7 +254,7 @@ header nav a:hover .active { border-top:0; }
 }
 
 /* portfolio */
-#list-project{
+#list-projects{
     display:flex;
     justify-content: center;
     align-items: center;
@@ -309,14 +306,27 @@ footer form{
     margin:50px auto 50px auto;
 }
 
-footer textarea, footer .champs { width: 90%; }
+.fields {
+    width: 90%;
+    font-size:0.9em;
+}
+
+/* Pour assurer un affichage cohérent avec FireFox */
+input::-moz-placeholder , textarea::-moz-placeholder{
+    font-size:1em;
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+  }
+/* fon d'exception FireFox */
 
 footer address p{
     margin: 0 0 0 0;
     padding: 5px 0 0 0;
 }
 
-#enterprise-name { font-weight: bold; }
+address strong { 
+    color:#555555;
+    font-size: 1em;
+}
 
 address { font-style:normal; }
 

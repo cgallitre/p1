@@ -28,7 +28,7 @@
         top:30%;
         left:8%;
     }
-    #fleche-gauche{
+    #left-arrow{
         position: absolute;
         top:45%;
         left:0;
@@ -38,7 +38,7 @@
         overflow:hidden;
     }
     
-    #fleche-droite{
+    #right-arrow{
         position: absolute;
         top:45%;
         right:0;
@@ -60,6 +60,11 @@
     
     #img-services{
         max-width:500px;
+    }
+
+    /* Projets */
+    .filter-button{
+        width:100px;
     }
 
     /* Footer */

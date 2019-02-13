@@ -13,6 +13,8 @@
     <script defer src="https://use.fontawesome.com/releases/v5.7.0/js/all.js" integrity="sha384-qD/MNBVMm3hVYCbRTSOW130+CWeRIKbpot9/gR1BHkd7sIct4QKhT1hOPd+2hO8K"
         crossorigin="anonymous"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="icon" href="images/favicon.ico">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>WebAgency</title>
 </head>
@@ -27,10 +29,10 @@
             <!-- Menu -->
             <nav>
                 <ul>
-                    <li><a href="#" id="active-home">Accueil</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Portfolio</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="#container">Accueil</a></li>
+                    <li><a href="#nos-services">Services</a></li>
+                    <li><a href="#nos-projets">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
         </header>
@@ -38,23 +40,23 @@
         <!-- slider -->
         <div id="slider">
             <!-- Flèche de déplacement gauche -->
-            <span id="fleche-gauche" class="fa-layers">
+            <span id="left-arrow" class="fa-layers">
                 <i class="fas fa-circle icones-dark" data-fa-transform="grow-6 left-8"></i>
                 <i class="fas fa-chevron-left" data-fa-transform="shrink-8 left-3"></i>
             </span>
             <!-- Flèche de déplacement droite -->
-            <span id="fleche-droite" class="fa-layers">
+            <span id="right-arrow" class="fa-layers">
                 <i class="fas fa-circle icones-dark" data-fa-transform="grow-6 right-8"></i>
                 <i class="fas fa-chevron-right" data-fa-transform="shrink-8 right-3"></i>
             </span>
             <!-- Slogan -->
             <div id="slogan">
-                <h1><span class="name">WEBAGENCY</span> : L'AGENCE DE TOUS VOS PROJETS !</h1>
+                <h1><strong>WEBAGENCY</strong> : L'AGENCE DE TOUS VOS PROJETS !</h1>
                 <p>Vous avez un projet ? La WebAgency vous aide à le réaliser !</p>
                 <p class="button">Plus d'infos</p>
             </div>
         </div>
-
+        <div id="test"></div>
         <!-- Services -->
         <section id="nos-services">
             <!-- Présentation des services -->
@@ -88,7 +90,7 @@
                             </span>
                         </div>
                         <!-- UX contenu textuel-->
-                        <div class="text-services">
+                        <div class="text-service">
                             <h3>UX design</h3>
                             <p>Parce que l'eXpérience Utilisateur est la clé de succès de votre site, nous portons
                                 toute notre attention sur ce point, premier élément de votre projet.</p>
@@ -107,7 +109,7 @@
                             </span>
                         </div>
                         <!-- UI Contenu textuel-->
-                        <div class="text-services">
+                        <div class="text-service">
                             <h3>UI design</h3>
                             <p>Point de rencontre entre l'internaute et votre site, l'Interface Utilisateur doit être
                                 soignée et répondre aux exigences de l'eXpérience Utilisateur déterminée en amont du
@@ -127,7 +129,7 @@
                             </span>
                         </div>
                         <!-- SEO Contenu textuel -->
-                        <div class="text-services">
+                        <div class="text-service">
                             <h3>SEO</h3>
                             <p>Positionner votre site dans les premiers résultats des moteurs de recherche en fonction
                                 des mots clés que vous avez déterminés : un travail d'experts que nous mettons à votre
@@ -139,7 +141,7 @@
         </section>
 
         <!-- Projets -->
-        <section id="projets">
+        <section id="nos-projets">
             <!-- Présentation des projets-->
             <h2>Nos projets</h2>
             <p class="title-line">
@@ -173,9 +175,9 @@
                 </ul>
             </nav>
             <!-- Liste des projets sous forme de vignettes -->
-            <div id="list-project">
+            <div id="list-projects">
                 <div class="one-project">
-                    <img src="images/portfolio/01_min.jpg" alt="Projet 1">
+                    <img src="images/portfolio/lunettes-pour-tous.jpg" alt="Lunettes sur mesure">
                     <div class="title-project">
                         <h3>Lunettes sur mesure</h3>
                         <p>Opticien pour tous</p>
@@ -184,12 +186,12 @@
                         <span class="fa-stack">
                             <i class="fas fa-circle  fa-stack-1x icones-blanc" data-fa-transform="grow-16"></i>
                             <i class="fas fa-circle fa-stack-1x icones-bleu" data-fa-transform="grow-12"></i>
-                            <i class="far fa-eye fa-stack-1x icones-blanc" data-fa-transform="shrink-6"></i>
+                            <i class="far fa-eye fa-stack-1x icones-blanc" data-fa-transform="shrink-4"></i>
                         </span>
                     </div>
                 </div>
                 <div class="one-project">
-                    <img src="images/portfolio/02_min.jpg" alt="Projet 2">
+                    <img src="images/portfolio/origamania.jpg" alt="Le site des origami ludiques">
                     <div class="title-project">
                         <h3>Origamania</h3>
                         <p>Le site des origami ludiques</p>
@@ -200,15 +202,15 @@
                             <i class="
                                 fas fa-circle fa-stack-1x icones-bleu"
                                 data-fa-transform="grow-12"></i>
-                            <i class="far fa-eye fa-stack-1x icones-blanc" data-fa-transform="shrink-6"></i>
+                            <i class="far fa-eye fa-stack-1x icones-blanc" data-fa-transform="shrink-4"></i>
                         </span>
                     </div>
                 </div>
                 <div class="one-project">
-                    <img src="images/portfolio/03_min.jpg" alt="Projet 3">
+                    <img src="images/portfolio/coiffeur-tendance.jpg" alt="Le coiffeur tendance">
                     <div class="title-project">
                         <h3>Le coiffeur tendance</h3>
-                        <p>pour elle et lui</p>
+                        <p>Pour Elle et Lui</p>
                     </div>
                     <div class="rounded-button">
                         <span class="fa-stack">
@@ -216,15 +218,15 @@
                             <i class="
                                 fas fa-circle fa-stack-1x icones-bleu"
                                 data-fa-transform="grow-12"></i>
-                            <i class="far fa-eye fa-stack-1x icones-blanc" data-fa-transform="shrink-6"></i>
+                            <i class="far fa-eye fa-stack-1x icones-blanc" data-fa-transform="shrink-4"></i>
                         </span>
                     </div>
                 </div>
                 <div class="one-project">
-                    <img src="images/portfolio/04_min.jpg" alt="Projet 4">
+                    <img src="images/portfolio/mockup-soft.jpg" alt="Logiciel pour donner vie à vos projets">
                     <div class="title-project">
                         <h3>Mockup Soft</h3>
-                        <p>logiciel pour donner vie à vos projets</p>
+                        <p>Logiciel pour donner vie à vos projets</p>
                     </div>
                     <div class="rounded-button">
                         <span class="fa-stack">
@@ -232,12 +234,12 @@
                             <i class="
                                 fas fa-circle fa-stack-1x icones-bleu"
                                 data-fa-transform="grow-12"></i>
-                            <i class="far fa-eye fa-stack-1x icones-blanc" data-fa-transform="shrink-6"></i>
+                            <i class="far fa-eye fa-stack-1x icones-blanc" data-fa-transform="shrink-4"></i>
                         </span>
                     </div>
                 </div>
                 <div class="one-project">
-                    <img src="images/portfolio/05_min.jpg" alt="Projet 5">
+                    <img src="images/portfolio/black-and-white.jpg" alt="Prêt à porter">
                     <div class="title-project">
                         <h3>Black & White</h3>
                         <p>Prêt à porter</p>
@@ -248,12 +250,12 @@
                             <i class="
                                 fas fa-circle fa-stack-1x icones-bleu"
                                 data-fa-transform="grow-12"></i>
-                            <i class="far fa-eye fa-stack-1x icones-blanc" data-fa-transform="shrink-6"></i>
+                            <i class="far fa-eye fa-stack-1x icones-blanc" data-fa-transform="shrink-4"></i>
                         </span>
                     </div>
                 </div>
                 <div class="one-project">
-                    <img src="images/portfolio/06_min.jpg" alt="Projet 6">
+                    <img src="images/portfolio/world-travels.jpg" alt="Peinture style art moderne">
                     <div class="title-project">
                         <h3>World travels</h3>
                         <p>Peinture style art moderne</p>
@@ -264,12 +266,12 @@
                             <i class="
                                 fas fa-circle fa-stack-1x icones-bleu"
                                 data-fa-transform="grow-12"></i>
-                            <i class="far fa-eye fa-stack-1x icones-blanc" data-fa-transform="shrink-6"></i>
+                            <i class="far fa-eye fa-stack-1x icones-blanc" data-fa-transform="shrink-4"></i>
                         </span>
                     </div>
                 </div>
                 <div class="one-project">
-                    <img src="images/portfolio/07_min.jpg" alt="Projet 7">
+                    <img src="images/portfolio/the-rocket.jpg" alt="Dessinateur industriel">
                     <div class="title-project">
                         <h3>The rocket</h3>
                         <p>Dessinateur industriel</p>
@@ -280,12 +282,12 @@
                             <i class="
                                 fas fa-circle fa-stack-1x icones-bleu"
                                 data-fa-transform="grow-12"></i>
-                            <i class="far fa-eye fa-stack-1x icones-blanc" data-fa-transform="shrink-6"></i>
+                            <i class="far fa-eye fa-stack-1x icones-blanc" data-fa-transform="shrink-4"></i>
                         </span>
                     </div>
                 </div>
                 <div class="one-project">
-                    <img src="images/portfolio/08_min.jpg" alt="Projet 8">
+                    <img src="images/portfolio/foournitures-express.jpg" alt="Tout pour votre bureau">
                     <div class="title-project">
                         <h3>Fournitures express</h3>
                         <p>Tout pour votre bureau</p>
@@ -296,7 +298,7 @@
                             <i class="
                                 fas fa-circle fa-stack-1x icones-bleu"
                                 data-fa-transform="grow-12"></i>
-                            <i class="far fa-eye fa-stack-1x icones-blanc" data-fa-transform="shrink-6"></i>
+                            <i class="far fa-eye fa-stack-1x icones-blanc" data-fa-transform="shrink-4"></i>
                         </span>
                     </div>
                 </div>
@@ -310,14 +312,14 @@
             <form method="post" action="#">
                 <h2>Contact Info</h2>
                 <address>
-                    <p id="enterprise-name">WebAgency SAS</p>
+                    <strong>WebAgency SAS</strong>
                     <p>25 Rue d'Hauteville 75010 Paris</p>
-                    <p>Tél.: 01 02 03 04 05</p>
+                    <p>Tél: 01 02 03 04 05</p>
                 </address>
-                <p><input class="champs" type="text" name="nom" size="30" placeholder="Nom" /></p>
-                <p><input class="champs" type="email" name="email" size="30" placeholder="Email" /></p>
-                <p><input class="champs" type="text" name="sujet" size="30" placeholder="Sujet" /></p>
-                <p><textarea name="message" rows="10" placeholder="Message"></textarea></p>
+                <p><input class="fields" type="text" name="name" size="30" placeholder="Nom" /></p>
+                <p><input class="fields" type="email" name="email" size="30" placeholder="Email" /></p>
+                <p><input class="fields" type="text" name="subject" size="30" placeholder="Sujet" /></p>
+                <p><textarea class="fields" name="message" rows="10" placeholder="Message"></textarea></p>
                 <input class="button" type="submit" value="Envoyer" />
             </form>
         </footer>
