@@ -132,6 +132,7 @@ header nav a:hover .active { border-top:0; }
     height:220px;
     background-size:contain;
     color:#ffffff;
+    margin-bottom: -60px;
 }
 
 strong { 
@@ -151,13 +152,9 @@ strong {
     width: 70%;
 }
 
-#slider p{
-    display: none;
-}
+#slider p { display: none; }
 
-#left-arrow, #right-arrow{
-    display: none;
-}
+#left-arrow, #right-arrow { display: none; }
 
 /* Services */
 #services{
@@ -167,9 +164,7 @@ strong {
     flex-wrap: wrap;
 }
 
-#description-services{
-    max-width:510px;
-}
+#description-services { max-width:510px; }
 
 #img-services{
     display:block;
@@ -228,9 +223,7 @@ strong {
     border-radius: 5px 0 0 5px;
 }
 
-.wrap-button:nth-child(4) .filter-button{
-    border-radius: 0 5px 5px 0;
-}
+.wrap-button:nth-child(4) .filter-button { border-radius: 0 5px 5px 0; }
 
 .filter-button:hover{
     background-color: #5cadd3;
@@ -316,7 +309,7 @@ input::-moz-placeholder , textarea::-moz-placeholder{
     font-size:1em;
     font-family: 'Trebuchet MS', Arial, sans-serif;
   }
-/* fon d'exception FireFox */
+/* fin d'exception FireFox */
 
 footer address p{
     margin: 0 0 0 0;
