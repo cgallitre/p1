@@ -10,6 +10,11 @@
 
     section .description { width:50% }
 
+     /* Alignement des liens sur ancre */
+     section:target { padding-top: 120px; }
+     #nos-projets:target { padding-top: 120px; }
+     footer:target { padding-top: 0px; }
+
     /* Entête */
     header { justify-content: space-around; }
 

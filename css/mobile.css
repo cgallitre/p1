@@ -74,6 +74,9 @@ hr{
     border: 1px solid #d3d3d3;
 }
 
+ /* Alignement des liens sur ancre */
+section:target { padding-top: 150px; }
+#container:target {padding-top: 1px; }
 
 /* En-tête */
 header{
@@ -192,8 +195,12 @@ strong {
 
 #nos-projets { 
     background-color: #f0f0f0;
-    padding-top: 50px;
+    padding-top: 100px;
  }
+
+  /* Alignement des liens sur ancre */
+  #nos-projets:target { padding-top: 160px; }
+
 
 /* Barre de boutons */
 #project-buttons{
@@ -295,6 +302,9 @@ footer{
     position:relative;
     font-size: 0.9em;
 }
+
+  /* Alignement des liens sur ancre */
+footer:target { padding-top: 120px; }
 
 footer form{
     background-color: #FFF;
